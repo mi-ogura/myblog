@@ -19,4 +19,5 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function() {
      Route::get('work/edit', 'Admin\WorkController@edit');
+     Route::get('work/create', 'Admin\WorkController@add');
 });
